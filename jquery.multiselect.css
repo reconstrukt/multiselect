@@ -1,0 +1,42 @@
+/* multiselect styles */
+
+ul.jquery-multiselect {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+ul.jquery-multiselect li {
+  list-style: none;
+  display: block;
+  padding: 3px;
+  border: none;
+  color: #333;
+  margin: 3px;
+  position: relative;
+  border-radius: 3px;
+}
+ul.jquery-multiselect li:hover {
+  background-color: #f5f5f5;
+}
+ul.jquery-multiselect li.selected {
+  background-color: #6FA3F2;
+  color: white;
+}
+ul.jquery-multiselect li.selected:after {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  color: #fff;
+  content:  "\2713 ";
+}
+
+/* demo */
+
+body {
+  font: normal 14px sans-serif;  
+}
