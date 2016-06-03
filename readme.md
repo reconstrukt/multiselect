@@ -19,28 +19,28 @@ Features
 Options
 -------
 
-### maxSelections
+## maxSelections
 
-    maxSelections : 3
-    
+    maxSelections : 3 
+
 Allows you to enforce a maximum number of selections. Provide an integer value, 1 or greater. Default: `null` (unlimited).
 
-### autoSize
+## autoSize
 
     autoSize : true
-    
+ 
 Indicates the control should inherit the width and height of the native <select> element. Set to `false` to provide your own width/height via custom CSS. Default: `true`.
 
-### cssClass
+## cssClass
 
     cssClass : 'jquery-multiselect'
-    
+ 
 Specifies the base CSS class for the replacement control. Default: 'jquery-multiselect'.
 
-### debug
+## debug
 
     debug : false
-    
+ 
 Dumps debugging statements to the console. Default: `false`.
 
 
