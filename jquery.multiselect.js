@@ -21,7 +21,7 @@
     // init
     this.init = function() {
       
-      if ( options.debug ) console.log('multiselect init')
+      if ( options.debug ) console.log('multiselect init');
       
       select.hide();
 
@@ -92,7 +92,7 @@
     // update the <select> state
     this.sync = function(){
       
-      if ( options.debug ) console.log('syncing <select>')
+      if ( options.debug ) console.log('syncing <select>');
       
       picker.lis.each( function(){
         var li = $(this);
@@ -111,14 +111,14 @@
 
     // re-init instance
     this.update = function() {
-      if ( options.debug ) console.log('calling multiselect.update()')
+      if ( options.debug ) console.log('calling multiselect.update()');
       this.destroy();
       this.init();
     };
 
     // destroy instance
     this.destroy = function() {
-      if ( options.debug ) console.log('calling multiselect.destroy()')
+      if ( options.debug ) console.log('calling multiselect.destroy()');
       picker.ul.remove();
     };
   };
@@ -147,7 +147,7 @@
       // stash plugin object on select's data
       select.data( 'multiselect', multiselect );
       
-      if ( options.debug ) console.log('multiselect ready')
+      if ( options.debug ) console.log('multiselect ready');
       
     });
   };
