@@ -19,17 +19,17 @@ Features
 Options
 -------
 
-# maxSelections
+## maxSelections
 
     maxSelections : 3 
 
 Allows you to enforce a maximum number of selections. Provide an integer value, 1 or greater. Default: `null` (unlimited). 
 
-# autoSize
+## autoSize
 
     autoSize : true
  
-Indicates the control should inherit the width and height of the native <select> element. Set to `false` to provide your own width/height via custom CSS. Default: `true`. 
+
 
 Usage
 -----
