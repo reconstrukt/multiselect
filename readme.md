@@ -5,8 +5,9 @@ Drop-in replacement for multiple-select elements.
 
 JQuery Multiselect provides a facade for manipulating standard multiple-select form elements in desktop, tablet and mobile browsers. Interactions are bound to corresponding `<select>` elements, so forms continue to behave as expected without requiring server-side updates.  
 
-Check out the demo: https://rawgit.com/reconstrukt/multiselect/master/index.html
-Play with the fiddle: https://jsfiddle.net/reconstrukt/cn0dxnz4/
+Demo: https://rawgit.com/reconstrukt/multiselect/master/index.html 
+
+Fiddle: https://jsfiddle.net/reconstrukt/cn0dxnz4/
 
 
 Features
