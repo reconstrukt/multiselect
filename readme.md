@@ -14,8 +14,7 @@ Features
 --------
 
  - Forms behave normally, no server-side shenanigans 
- - Replaced `<select>` elements continue to fire native 'change' events as expected  
- - Default-selected `<option selected>` elements in HTML behave as expected  
+ - Replaced `<select>` elements continue to fire native 'change' events as expected. Default-selected `<option selected>` elements in HTML also behave as expected.
  - Improved UX for native multiple `<select>` elements on iOS 
  - Supports automatic resizing to match width + height of native `<select>`  
  - Supports a 'maximum number of selections' via `maxSelections` config option
@@ -34,7 +33,7 @@ Allows you to enforce a maximum number of selections. Provide an integer value, 
 
     autoSize : true
  
-Indicates the control should inherit the width and height of the native `<select>` element. Set to `false` to provide your own width/height via custom CSS. Default: `true`. 
+Indicates whether to inherit the width and height of the native `<select>` element. Set to `false` to provide your own width/height via custom CSS. Default: `true`. 
 
 ## cssClass
 
