@@ -3,7 +3,7 @@ JQuery Multiselect
 
 Better multiple-select elements, without the drama.
 
-JQuery Multiselect provides a facade for manipulating standard multiple-select form elements in desktop, tablet and mobile browsers. Interactions are bound to corresponding `<select>` elements, so forms continue to behave as expected without requiring server-side updates. Simply put, everything just works.
+JQuery Multiselect provides an unobtrusive replacement for standard multiple-select form elements in desktop and mobile browsers. Plugin interactions are bound to their corresponding `<select>` elements, so your forms continue to behave as expected without any server-side updates. Simply put, everything just works.
 
 Demo: https://rawgit.com/reconstrukt/multiselect/master/index.html 
 
@@ -14,7 +14,7 @@ Features
 --------
 
  - Forms behave normally, no server-side shenanigans 
- - Replaced `<select>` elements continue to fire native 'change' events as expected. Default-selected `<option selected>` elements in HTML also behave as expected.
+ - Replaced `<select>` elements fire native 'change' events as expected. Default-selected `<option selected>` elements appear as expected. Values submitted from your `<form>` work as usual.
  - Improved UX for native multiple `<select>` elements on iOS 
  - Supports automatic resizing to match width + height of native `<select>`  
  - Supports a 'maximum number of selections' via `maxSelections` config option
