@@ -29,7 +29,7 @@ Allows you to enforce a maximum number of selections. Provide an integer value, 
 
     autoSize : true
  
-
+Indicates the control should inherit the width and height of the native <select> element. Set to `false` to provide your own width/height via custom CSS. Default: `true`. 
 
 Usage
 -----
