@@ -21,6 +21,8 @@
     // init
     this.init = function() {
       
+      if ( options.debug ) console.log('multiselect init')
+      
       select.hide();
 
       picker.ul = $('<ul />').addClass( options.cssClass );
@@ -62,11 +64,13 @@
             
             if ( changed ) {
               if ( options.debug ) console.log( 'changes made to <li> & <option>' );
+              
+              // update the <select> state
+              select.data( 'multiselect' ).sync();
+              
               // trigger change event on <option>
               var op_clicked = li_clicked.data( 'multiselect' )['boundOption'];
-              if ( op_clicked ) op_clicked.trigger( 'change' );
-              // update the <select> state
-              select.data( 'multiselect' ).sync();              
+              if ( op_clicked ) op_clicked.trigger( 'change' );              
             }
             
             event.stopPropagation();
@@ -88,7 +92,7 @@
     // update the <select> state
     this.sync = function(){
       
-      console.log('syncing <select>')
+      if ( options.debug ) console.log('syncing <select>')
       
       picker.lis.each( function(){
         var li = $(this);
@@ -107,18 +111,21 @@
 
     // re-init instance
     this.update = function() {
+      if ( options.debug ) console.log('calling multiselect.update()')
       this.destroy();
       this.init();
     };
 
     // destroy instance
     this.destroy = function() {
+      if ( options.debug ) console.log('calling multiselect.destroy()')
       picker.ul.remove();
     };
   };
 
   $.fn.multiselect = function(options) {
     return this.each(function() {
+      
       var select = $(this);
       
       // handle plugin instances
@@ -139,6 +146,9 @@
 
       // stash plugin object on select's data
       select.data( 'multiselect', multiselect );
+      
+      if ( options.debug ) console.log('multiselect ready')
+      
     });
   };
 })(jQuery);
