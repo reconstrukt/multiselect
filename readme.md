@@ -14,8 +14,8 @@ Features
  - Forms continue to behave normally, no server-side shenanigans 
  - Automatically resizes to match width + height of native `<select>`  
  - Better UX than native multiple `<select>` elements on iOS iPad/iPhone  
- - Replaced <select> elements continue to fire native 'change' events as expected 
- - Optionally supports a 'maximum number of selections' via config 
+ - Replaced `<select>` elements continue to fire native 'change' events as expected 
+ - Supports a 'maximum number of selections' via `maxSelections` config option
 
 Options
 -------
